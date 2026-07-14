@@ -11,23 +11,23 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:title" content="Mente Plena | Psicologia Clínica e Corporativa em Jundiaí" />
+  <meta property="og:title" content="Espaço VivaMente - Desenvolvimento, Direção e Propósito | Psicologia Clínica e Corporativa em Jundiaí" />
   <meta property="og:description" content="Psicóloga em Jundiaí e atendimento online para todo o Brasil. Saúde mental individual e corporativa. Agende sua consulta." />
   <meta property="og:url" content="https://seudominio.com/" />
   <meta property="og:image" content="https://seudominio.com/og-image.webp" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mente Plena | Psicologia Clínica e Corporativa em Jundiaí" />
+  <meta name="twitter:title" content="Espaço VivaMente - Desenvolvimento, Direção e Propósito | Psicologia Clínica e Corporativa em Jundiaí" />
   <meta name="twitter:description" content="Psicóloga em Jundiaí e atendimento online para todo o Brasil. Saúde mental individual e corporativa. Agende sua consulta." />
   <meta name="twitter:image" content="https://seudominio.com/og-image.webp" />
 
-  <title>Mente Plena | Psicologia Clínica e Corporativa em Jundiaí</title>
+  <title>Espaço VivaMente - Desenvolvimento, Direção e Propósito | Psicologia Clínica e Corporativa em Jundiaí</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preload" as="image" href="/images/background.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="/images/logo.png" />
+  <link rel="preload" as="image" href="images/background.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/logo.png" />
 
   <link rel="stylesheet" href="style.css" />
 
@@ -35,7 +35,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Psychologist",
-    "name": "Mente Plena",
+    "name": "Espaço VivaMente - Desenvolvimento, Direção e Propósito",
     "url": "https://seudominio.com/",
     "telephone": "+55-11-97433-1444",
     "address": {
@@ -82,10 +82,10 @@
     <nav id="header" aria-label="Navegação principal">
       <div class="header-inner">
         <a href="#conteudo" class="logo" aria-label="Ir para o topo da página">
-          <img class="logo-img" src="/images/logo.png" alt="Mente Plena" width="180" height="56" decoding="async" />
+          <img class="logo-img" src="images/logo.png" alt="Espaço VivaMente" width="180" height="56" decoding="async" />
           <div>
-            <span class="logo-name">Mente Plena</span>
-            <h1 class="logo-tag">Psicologia Clínica &amp; Corporativa</h1>
+            <span class="logo-name">Espaço VivaMente</span>
+            <h1 class="logo-tag">Desenvolvimento, Direção e Propósito</h1>
           </div>
         </a>
 
@@ -119,7 +119,7 @@
   <main id="conteudo">
     <section class="hero-section" aria-labelledby="hero-title">
       <div class="hero-bg" aria-hidden="true">
-        <img src="/images/background.png" class="bg-hero" alt="" loading="eager" fetchpriority="high" decoding="async" width="1920" height="1080" id="heroBg" />
+        <img src="images/background.png" class="bg-hero" alt="" loading="eager" fetchpriority="high" decoding="async" width="1920" height="1080" id="heroBg" />
         <div class="hero-bg-overlay"></div>
         <div class="hero-bg-overlay2"></div>
       </div>
@@ -402,7 +402,9 @@
               </button>
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <div id="formStatus" class="form-status" role="status" aria-live="polite" hidden></div>
+
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
               <input type="hidden" name="access_key" value="898410e8-1b17-412c-b8eb-83661e956d20" />
 
               <div class="form-panel active" id="form-pessoal">
@@ -512,8 +514,8 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <div class="footer-logo-name">Mente Plena</div>
-            <div class="footer-logo-tag">Psicologia Clínica &amp; Corporativa</div>
+            <div class="footer-logo-name">Espaço VivaMente</div>
+            <div class="footer-logo-tag">Desenvolvimento, Direção e Propósito</div>
             <p class="footer-desc">Cuidando da saúde mental com ciência, ética e humanidade desde 2008. Atendimento em Jundiaí e online para todo o Brasil.</p>
             <div class="footer-socials">
               <a href="https://www.instagram.com/donata_psico" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -568,8 +570,8 @@
     </div>
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
-        <span>© 2026 Mente Plena Psicologia. Todos os direitos reservados.</span>
-        <span>Desenvolvido pela Hawk Consulting</span>
+        <span>© 2026 Espaço VivaMente - Desenvolvimento, Direção e Propósito. Todos os direitos reservados.</span>
+        <span>Desenvolvido pela Hawk Technology Consulting</span>
       </div>
     </div>
   </footer>
@@ -580,6 +582,8 @@
   </a>
 
 <script>
+  document.documentElement.classList.add('js');
+
   // Sticky header
   window.addEventListener('scroll', () => {
     const h = document.getElementById('header');
@@ -592,35 +596,121 @@
   menuToggle.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('open');
     menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+    menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    mobileMenu.hidden = !isOpen;
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
   document.querySelectorAll('.mobile-link').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('open');
       menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+      mobileMenu.hidden = true;
       document.body.style.overflow = '';
     });
   });
 
   // Tabs
-  function switchTab(tab) {
-    document.querySelectorAll('.tab-btn').forEach((b, i) => {
-      b.classList.toggle('active', (tab === 'individual' && i === 0) || (tab === 'corporativo' && i === 1));
+  function revealElements(container) {
+    container.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => {
+      el.classList.add('visible');
     });
-    document.getElementById('panel-individual').classList.toggle('active', tab === 'individual');
-    document.getElementById('panel-corporativo').classList.toggle('active', tab === 'corporativo');
+  }
+
+  function switchTab(tab) {
+    const isIndividual = tab === 'individual';
+    document.querySelectorAll('.tab-btn').forEach((b, i) => {
+      const active = (tab === 'individual' && i === 0) || (tab === 'corporativo' && i === 1);
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-selected', active);
+    });
+    const indPanel = document.getElementById('panel-individual');
+    const corpPanel = document.getElementById('panel-corporativo');
+    indPanel.classList.toggle('active', isIndividual);
+    corpPanel.classList.toggle('active', !isIndividual);
+    indPanel.hidden = !isIndividual;
+    corpPanel.hidden = isIndividual;
+    revealElements(isIndividual ? indPanel : corpPanel);
   }
 
   // Form toggle
-  function switchForm(type) {
-    const isPessoal = type === 'pessoal';
-    document.getElementById('btn-pessoal').classList.toggle('active', isPessoal);
-    document.getElementById('btn-corp').classList.toggle('active', !isPessoal);
-    document.getElementById('form-pessoal').classList.toggle('active', isPessoal);
-    document.getElementById('form-corporativo').classList.toggle('active', !isPessoal);
+  function setPanelFieldsState(panel, enabled) {
+    panel.querySelectorAll('input, select, textarea').forEach(field => {
+      field.disabled = !enabled;
+    });
   }
 
-  // Scroll reveal — all .fade-up, .fade-left, .fade-right
+  function switchForm(type) {
+    const isPessoal = type === 'pessoal';
+    const pessoalPanel = document.getElementById('form-pessoal');
+    const corpPanel = document.getElementById('form-corporativo');
+
+    document.getElementById('btn-pessoal').classList.toggle('active', isPessoal);
+    document.getElementById('btn-corp').classList.toggle('active', !isPessoal);
+    document.getElementById('btn-pessoal').setAttribute('aria-selected', isPessoal);
+    document.getElementById('btn-corp').setAttribute('aria-selected', !isPessoal);
+
+    pessoalPanel.classList.toggle('active', isPessoal);
+    corpPanel.classList.toggle('active', !isPessoal);
+    pessoalPanel.hidden = !isPessoal;
+    corpPanel.hidden = isPessoal;
+
+    setPanelFieldsState(pessoalPanel, isPessoal);
+    setPanelFieldsState(corpPanel, !isPessoal);
+  }
+
+  // Initialize form panels
+  switchForm('pessoal');
+
+  // Form submit with feedback message
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+
+  function showFormStatus(message, type) {
+    formStatus.textContent = message;
+    formStatus.className = 'form-status ' + type;
+    formStatus.hidden = false;
+  }
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = contactForm.querySelector('.form-panel:not([hidden]) .btn-form');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    formStatus.hidden = true;
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        showFormStatus('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+        contactForm.reset();
+        switchForm('pessoal');
+      } else {
+        showFormStatus(data.message || 'Não foi possível enviar. Tente novamente.', 'error');
+      }
+    } catch {
+      showFormStatus('Erro de conexão. Verifique sua internet e tente novamente.', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+
+  // Scroll reveal
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -628,9 +718,18 @@
         observer.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
-  document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => {
+    if (isInViewport(el)) el.classList.add('visible');
+    else observer.observe(el);
+  });
+
+  // Fallback: garante que conteúdo apareça mesmo se o observer falhar
+  setTimeout(() => {
+    document.querySelectorAll('.fade-up:not(.visible), .fade-left:not(.visible), .fade-right:not(.visible)')
+      .forEach(el => el.classList.add('visible'));
+  }, 2500);
 </script>
 </body>
 </html>
