@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="VivaMente">
+  <defs>
+    <linearGradient id="bg" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a2e44"/>
+      <stop offset="100%" stop-color="#243b55"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="10" y1="6" x2="22" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3a9e87"/>
+      <stop offset="100%" stop-color="#2e7d6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <path d="M16 5.5C11.2 12.8 9 17.6 9 21.2c0 3.3 2.4 5.8 7 5.8s7-2.5 7-5.8c0-3.6-2.2-8.4-7-15.7z" fill="url(#leaf)"/>
+  <path d="M16 9v13.5" stroke="#b8d5cb" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M12.2 14.2c2.1 1.4 3.5 1.4 5.6 0" fill="none" stroke="#b8d5cb" stroke-width="1.1" stroke-linecap="round" opacity="0.7"/>
+</svg>
