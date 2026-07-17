@@ -1727,6 +1727,175 @@ section {
 }
 
 /* ── DEPOIMENTOS ── */
+.depoimentos {
+  background: var(--cream);
+}
+.depoimentos-header {
+  max-width: 720px;
+}
+.depoimentos-header .section-title {
+  line-height: 1.25;
+}
+.depo-google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+  padding: 12px 20px 12px 16px;
+  background: white;
+  border: 1px solid var(--stone);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-soft);
+}
+.depo-google-badge:hover {
+  border-color: rgba(46, 125, 107, 0.35);
+  box-shadow: var(--shadow-mid);
+  transform: translateY(-2px);
+}
+.depo-google-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.depo-google-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  text-align: left;
+}
+.depo-google-score {
+  font-size: 0.92rem;
+  color: var(--navy);
+  line-height: 1.2;
+}
+.depo-google-score strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.depo-google-stars {
+  color: #fbbc04;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.depo-google-link-text {
+  font-size: 0.82rem;
+  color: var(--teal);
+  font-weight: 600;
+  margin-left: 4px;
+  padding-left: 14px;
+  border-left: 1px solid var(--stone);
+  white-space: nowrap;
+}
+.depoimentos-footer {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+.depo-avaliar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: white;
+  border: 1.5px solid var(--stone);
+  border-radius: 50px;
+  color: var(--navy);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-soft);
+}
+.depo-avaliar-link:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-mid);
+}
+.depo-avaliar-link svg:last-child {
+  color: var(--teal);
+  transition: transform 0.2s ease;
+}
+.depo-avaliar-link:hover svg:last-child {
+  transform: translateX(3px);
+}
+.depo-carousel {
+  position: relative;
+  margin-top: 48px;
+}
+.depo-carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+.depo-carousel-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.depo-carousel-track .depo-card {
+  flex: 0 0 calc((100% - 48px) / 3);
+  min-width: 0;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 32px 28px;
+  background: white;
+  border: 1px solid var(--stone);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.depo-carousel-track .depo-card:hover {
+  box-shadow: var(--shadow-mid);
+  transform: translateY(-3px);
+}
+.depo-carousel-track .depo-card .depo-text {
+  flex: 1;
+  font-size: 0.92rem;
+  margin-bottom: 24px;
+}
+.depo-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+.depo-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: none;
+  padding: 0;
+  background: rgba(46, 125, 107, 0.2);
+  cursor: pointer;
+  transition: width 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.depo-carousel-dot.active {
+  width: 28px;
+  background: rgba(46, 125, 107, 0.18);
+}
+.depo-carousel-dot.active.animating::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  background: var(--teal);
+  border-radius: inherit;
+  animation: depoDotProgress 5s linear forwards;
+}
+@keyframes depoDotProgress {
+  from { width: 0; }
+  to { width: 100%; }
+}
 .depoimentos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2127,6 +2296,13 @@ html.js .fade-right:not(.visible) {
     opacity: 1;
     transform: none;
   }
+  .depo-carousel-track {
+    transition: none;
+  }
+  .depo-carousel-dot.active.animating::after {
+    animation: none;
+    width: 100%;
+  }
 }
 
 /* ── RESPONSIVE ── */
@@ -2188,6 +2364,10 @@ html.js .fade-right:not(.visible) {
   .dores-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .depo-carousel-track .depo-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+    min-height: 280px;
   }
   .beneficios-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2362,6 +2542,34 @@ html.js .fade-right:not(.visible) {
   .depoimentos-grid {
     grid-template-columns: 1fr;
     margin-top: 40px;
+  }
+  .depo-carousel {
+    margin-top: 36px;
+  }
+  .depo-carousel-track .depo-card {
+    flex: 0 0 100%;
+    min-height: 260px;
+    padding: 32px 24px 28px;
+  }
+  .depoimentos-footer {
+    margin-top: 28px;
+  }
+  .depo-google-badge {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+  }
+  .depo-google-link-text {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .depo-avaliar-link {
+    width: 100%;
+    justify-content: center;
   }
   .beneficios-grid .ben-card:nth-child(n) {
     grid-column: auto;
