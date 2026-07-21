@@ -2146,6 +2146,15 @@ footer {
   flex-shrink: 0;
   opacity: 0.5;
 }
+.footer-contact-item a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: var(--transition);
+  word-break: break-all;
+}
+.footer-contact-item a:hover {
+  color: white;
+}
 .footer-map {
   margin-top: 14px;
   border-radius: 10px;
@@ -2759,4 +2768,24 @@ html.js .fade-right:not(.visible) {
   .hero h2 {
     font-size: 1.75rem;
   }
+}
+
+/* ── PARÁGRAFOS JUSTIFICADOS (exceto home e cards) ── */
+main p,
+footer p,
+.ben-text {
+  text-align: justify;
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+
+.hero-sub,
+.dor-text,
+.servico-text,
+.depo-text {
+  text-align: unset;
+}
+
+.dor-card .dor-text {
+  text-align: center;
 }
